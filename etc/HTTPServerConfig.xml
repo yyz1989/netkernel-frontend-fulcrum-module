@@ -70,7 +70,7 @@
             </Item>
           </Array>
         </Arg>
-        <Set name="name">Frontend Fulcrum: <SystemProperty name="netkernel.http.frontend.port" default="8080" /></Set>
+        <Set name="name">LODVL Frontend Fulcrum: <SystemProperty name="netkernel.http.frontend.port" default="8081" /></Set>
         <Set name="host"><SystemProperty name="netkernel.http.frontend.host" default="0.0.0.0" /></Set>
         <Set name="port"><SystemProperty name="netkernel.http.frontend.port" default="8081" /></Set>
         <Set name="idleTimeout"><Property name="http.timeout" default="30000"/></Set>
@@ -210,7 +210,4 @@
   <!-- extra options                                               -->
   <!-- =========================================================== -->
   <Set name="stopAtShutdown">false</Set>
-  <Set name="sendServerVersion">true</Set>
-  <Set name="sendDateHeader">true</Set>
-  <Set name="gracefulShutdown">100</Set>
 </Configure>
